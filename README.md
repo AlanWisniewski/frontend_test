@@ -1,5 +1,6 @@
 # Notatka od autora
 Wykonane zostały praktycznie wszystkie zadania. Projekt powstał na frameworku Angular w wersji 18.1.0. Projekt uruchamia się bezproblemowo, wymaga jedynie użycia komendy "npm install", ale to oczywiście państwo wiedzą :)
+Jest to mój pierwszy poważny kontakt z Angularem, dlatego wszelkie uwagi przyjmę z pokorą i szacunkiem.
 
 Życzę miłego dnia oraz pozdrawiam,
 
