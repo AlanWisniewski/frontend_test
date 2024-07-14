@@ -1,0 +1,28 @@
+{
+    "texts": [
+      {
+        "id": 1,
+        "content": "<p>Treść pierwsza</p>"
+      },
+      {
+        "id": 2,
+        "content": "<p>Treść druga</p>"
+      },
+      {
+        "id": 3,
+        "content": "<p>Treść trzecia</p>"
+      },
+      {
+        "id": 4,
+        "content": "<p>Treść czwarta</p>"
+      },
+      {
+        "id": 5,
+        "content": "<p>Treść piąta</p>"
+      },
+      {
+        "id": 6,
+        "content": "<p>Treść szósta</p>"
+      }
+    ]
+  }

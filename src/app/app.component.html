@@ -1,0 +1,70 @@
+<div class="container">
+  <header>
+    <a href="/">
+    <div class="circle">
+      <svg role="img" width="60%" height="75%" aria-label="HTML" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M14.0511237,0.0421011299 L12.7732602,14.3574131 L7.02921611,15.9498508 L1.30098773,14.3596559 L0.0244776255,0.0421011299 L14.0511237,0.0421011299 Z M7.03780069,4.72479076 L4.55368906,4.72479076 L4.71416638,6.52294884 L7.03780069,6.52294884 L11.1134993,6.52294884 L11.0706538,6.99448148 L10.6580144,11.6174271 L10.6316034,11.9140975 L7.03780069,12.9101198 L7.02971882,12.9126531 L3.43270662,11.9140975 L3.18669295,9.15694241 L4.94943,9.15694241 L5.07444764,10.5574261 L7.03010551,11.0854932 L7.03172959,11.0850606 L8.99021036,10.5563047 L9.19403585,8.27891876 L7.03780069,8.27891876 L3.10823307,8.27891876 L2.67664575,3.43988943 L2.63461229,2.96878213 L7.03780069,2.96878213 L11.4305097,2.96878213 L11.3885149,3.43988943 L11.3085083,4.33009386 L11.2732806,4.72479076 L7.03780069,4.72479076 Z" fill="#FFFFFF" fill-rule="evenodd"></path>
+    </svg>
+    </div>
+    </a>
+    <h2>Zadanie <span>rekrutacyjne</span></h2>
+  </header>
+  
+  <main>
+    <h1>Nagłówek H1</h1>
+    <div class="main-content">
+      <div class="block block-first">
+        <h3>BLOK PIERWSZY</h3>
+        <ul>
+          <li>
+            <input type="radio" name="option" id="option1" (click)="handleOptionClick(1)">
+            <label [class.active]="selectedOption === 1" for="option1"></label>
+            <span>Opcja pierwsza</span>
+          </li>
+          <li>
+            <input type="radio" name="option" id="option2" (click)="handleOptionClick(2)">
+            <label [class.active]="selectedOption === 2" for="option2"></label>
+            <span>Opcja druga</span>
+          </li>
+          <li>
+            <input type="radio" name="option" id="option3" (click)="handleOptionClick(3)">
+            <label [class.active]="selectedOption === 3" for="option3"></label>
+            <span>Opcja losowa</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="block block-second">
+        <h3>BLOK DRUGI</h3>
+        <div class="button-container">
+          <button (click)="handleButtonClick('replace')">ZASTĄP</button>
+          <button (click)="handleButtonClick('append')">DOKLEJ</button>
+        </div>
+      </div>
+      
+      <div class="block block-third">
+        <h3>BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIĘ PRZYTNIE ...</h3>
+        <div id="textContainer">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec vehicula ipsum. Sed auctor, odio id imperdiet ornare, nisi dui ullamcorper erat, ac venenatis libero ipsum vel tortor. Integer consequat massa sem, sodales cursus lorem ultricies vitae.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="awesome-text">
+      <div class="square"></div>
+      <p class="p2">CSS <br>IS <br> AWESOME</p>
+    </div>
+    <p class="p1">——— nabthat ———</p>
+    <div class="dropdown-container">
+      <button (click)="toggleDropdown()">POKAŻ</button>
+      <ul class="options-list" [class.visible]="showDropdown" *ngIf="showDropdown">
+        <li><button (click)="resetPage()">ZRESETUJ USTAWIENIA</button></li>
+        <li><button (click)="appendName()">POKAŻ DANE OSOBOWE</button></li>
+      </ul>
+    </div>
+  </footer>
+</div>
